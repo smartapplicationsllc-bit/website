@@ -1,10 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Smart Applications, LLC</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Applications, LLC | Technology, Sales & Consulting</title>
+<meta name="description" content="Smart Applications, LLC is a technology and sales consulting firm that helps businesses grow and succeed." />
+
+<!-- Favicon (square mark) -->
+<link rel="icon" type="image/png" href="assets/img/logo-square-white.png" />
+<link rel="apple-touch-icon" href="assets/img/logo-square-white.png" />
+
+<!-- Fonts: Manrope (site-wide) + Space Grotesk / JetBrains Mono (hero animation only, from the Claude Design hero graphic) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <h1>Smart Applications, LLC</h1>
-  <p>Coming soon...</p>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="siteNav">
+  <div class="container">
+    <a href="#top" class="nav-logo">
+      <img src="assets/img/logo-horizontal-color.png" alt="Smart Applications, LLC" />
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#process">Process</a>
+      <a href="#why">Why Us</a>
+     <!-- <a href="#work">Work</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- <a href="#" class="btn btn-outline btn-sm">Client Login</a> -->
+      <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<!-- Animated "aurora ribbon" canvas background adapted from the Claude
+     Design hero graphic, recolored to the Smart Applications palette.
+     Content is intentionally flush right with the animation reading
+     left → right, matching that design. -->
+<section class="hero" id="top">
+  <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow hero-eyebrow">Technology &amp; Consulting Partner</span>
+
+      <!-- EDIT: Hero headline. Keep 1-3 short lines; wrap the words you want
+           accented in <span class="gradient-text">...</span> -->
+      <h1 class="hero-headline">
+        <span class="gradient-text">Technology,</span> Sales &amp;<br />
+        Consulting <span class="gradient-text">that performs.</span>
+      </h1>
+
+      <!-- EDIT: Hero subheadline — 1-2 sentences on what you do and for whom -->
+      <p class="lead">
+        Most operations run on workflows built for a different era—spreadsheets as databases, siloed systems, repetitive tasks that consume your team's time instead of your growth. We rebuild those workflows from the ground up, automating what slows you down, connecting what shouldn't be broken, and freeing your team to do work that actually scales your business.
+
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
+        <a href="#services" class="btn btn-outline">See What We Do</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVICES ============================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Services</span>
+      <!-- EDIT: Services heading/subtext -->
+      <h2>Three pillars, one partner</h2>
+      <p>Technology enables efficient, scalable growth and expertise unlocks the most powerful results.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- EDIT: Service card 1 -->
+      <div class="card reveal">
+        <div class="card-icon">💻</div>
+        <h3>Technology</h3>
+        <p>Many businesses are stuck in their legacy systems and processes. We help them modernize and streamline their operations.</p>
+        <div class="card-tags">
+          <span class="pill">Replace Legacy Systems</span>
+          <span class="pill">Enable Scalable Growth</span>
+          <span class="pill">Leverage AI for Efficiency</span>
+        </div>
+      </div>
+
+      <!-- EDIT: Service card 2 -->
+      <div class="card reveal">
+        <div class="card-icon">📈</div>
+        <h3>Sales</h3>
+        <p>Consistant, predictable sales enablement that drives growth and profitability.</p>
+        <div class="card-tags">
+          <span class="pill">Capture Every Sales Interaction</span>
+          <span class="pill">Reduce Admin Time in the Sales Process</span>
+          <span class="pill">Level Up Your Sales Team based on Top Performing Salespeople</span>
+        </div>
+      </div>
+
+      <!-- EDIT: Service card 3 -->
+      <div class="card reveal">
+        <div class="card-icon">🧭</div>
+        <h3>Consulting</h3>
+        <p>Staying ahead of the curve with the latest in technology and sales.</p>
+        <div class="card-tags">
+          <span class="pill">Leverage Current AI Tools</span>
+          <span class="pill">Create Custom AI Models</span>
+          <span class="pill">Leverage Business Best Practices</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOLUTIONS (split) ============================== -->
+<section class="section section-alt" id="solutions">
+  <div class="container">
+    <div class="split">
+      <div class="split-copy reveal">
+        <span class="eyebrow">Solutions</span>
+        <!-- EDIT: Split-section heading + paragraph -->
+        <h2>Stop guessing. Start measuring.</h2>
+        <p>
+          We listen to your business needs and goals, then we build the solutions that will help you achieve them.
+        </p>
+        <ul class="check-list">
+          <!-- EDIT: 4 short outcome/benefit bullets -->
+          <li><span class="check">✓</span> Scalable Growth</li>
+          <li><span class="check">✓</span> Predictable Revenue</li>
+          <li><span class="check">✓</span> Efficient Operations</li>
+          <li><span class="check">✓</span> Competitive Advantage</li>
+        </ul>
+      </div>
+
+      <!-- Decorative placeholder panel — swap for a real product screenshot,
+           dashboard image, or graphic once you have one -->
+           <div class="visual-panel reveal has-media">
+            <img class="media-fill" src="assets/img/solutions-screenshot.png" alt="Describe the image" />
+          </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROCESS ============================== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Process</span>
+      <!-- EDIT: Process heading/subtext -->
+      <h2>From first call to results</h2>
+      <p>A structured, repeatable methodology for every engagement.</p>
+    </div>
+
+    <div class="process-grid">
+      <!-- EDIT: 4 process steps -->
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <h3>Discovery</h3>
+        <p>You share, we listen. We align on the goals and objectives of the project and the scope of the work.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <h3>Plan</h3>
+        <p>We develop a detailed plan of action, including timelines, deliverables, and resources.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <h3>Build</h3>
+        <p>We build the solution, ensuring it is functional, efficient, and meets your needs.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <h3>Launch &amp; Support</h3>
+        <p>We launch the solution and provide ongoing support to ensure it is working as expected and to make any necessary adjustments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== WHY US ============================== -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Smart Applications</span>
+      <!-- EDIT: Why-us heading/subtext -->
+      <h2>Built different, on purpose</h2>
+      <p>We are a team of experts in technology and sales, with a proven track record of success. We are committed to delivering results that exceed your expectations.</p>
+    </div>
+
+    <div class="why-grid">
+      <!-- EDIT: 4 differentiators -->
+      <div class="card reveal">
+        <div class="card-icon">🎯</div>
+        <h3>Reason One: We LISTEN</h3>
+        <p>We listen and seek to understand before we make recommendations.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🤝</div>
+        <h3>Reason Two: Extensive EXPERIENCE</h3>
+        <p>We have collectively 100+ years of experience in technology and sales.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">⚙️</div>
+        <h3>Reason Three: We Set EXPECTATIONS</h3>
+        <p>We set realistic expectations and deliver on what we promise.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🚀</div>
+        <h3>Reason Four: We Drive RESULTS</h3>
+        <p>We always manage to deliver results that provide a clear return on investment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== WORK / SHOWCASE ============================== -->
+<!--
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Work</span>
+      <h2>Recent projects</h2>
+      <p>Swap these placeholders for case studies, client logos, or screenshots as you complete projects.</p>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="showcase-placeholder reveal"><span class="plus">+</span>Add project image or case study</div>
+      <div class="showcase-placeholder reveal"><span class="plus">+</span>Add project image or case study</div>
+      <div class="showcase-placeholder reveal"><span class="plus">+</span>Add project image or case study</div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ============================== CONTACT / CTA ============================== -->
+<section class="section cta-section" id="contact">
+  <div class="container">
+    <div class="contact-panel reveal">
+      <div class="section-head">
+        <span class="eyebrow">Let's Talk</span>
+        <!-- EDIT: CTA heading/subtext -->
+        <h2>Ready to get started?</h2>
+        <p>Tell us about your business and we'll follow up to see if we're a fit.</p>
+      </div>
+
+      <!-- NOTE: this is a static form. Point the `action` at a form backend
+           (Formspree, Netlify Forms, Basin, etc.) or wire main.js to your
+           own API before going live — GitHub Pages cannot process forms. -->
+      <form class="form-card" id="contactForm" action="#" method="POST">
+        <div class="field">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" placeholder="Company Name" required />
+        </div>
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your project"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Started</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="#top" class="footer-logo">
+        <img src="assets/img/logo-horizontal-color.png" alt="Smart Applications, LLC" />
+      </a>
+      <nav class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+       <!-- <a href="#work">Work</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Smart Applications, LLC. All rights reserved.</span>
+      <!-- EDIT: swap/remove policy links once those pages exist -->
+      <span style="display:flex; gap:20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
